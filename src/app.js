@@ -7,6 +7,8 @@ const app = express();
 
 const PORT = 5000 || process.env.PORT;
 
+app.use(express.static('public'))
+
 //view engine
 app.use(expressLayout);
 app.set('layout', './layouts/main');
